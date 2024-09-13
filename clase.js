@@ -60,3 +60,40 @@ console.log(ProductosConDescuento);
 
 
 // .ForEach()
+
+
+numeros.forEach(num => console.log());
+palabras.forEach(palabra => console.log(palabra[0]));
+edad.forEach((edad) => console.log(edad > 20 ? 'mayor':'menor'));
+precios.forEach(precio => console.log(`Precio original: ${precio}, con descuento: ${precio * 0.9}`)); // Aplica 10% descuento
+
+
+// funcion tipo tipo flecha 
+
+
+let saludar = () => console.log("buenas tardes-----");
+saludar();
+
+// funcion con parametro 
+
+const cuadrado = num => num * num;
+console.log(cuadrado(4));
+
+
+// funciponn con dos parametros
+
+
+let sumarNumeros2 = (A,B) => A+B;
+console.log(sumarNumeros2(10,30));
+
+
+// funcion con dos parametros
+
+
+let multiplicarcon3Numeros = (a,b,c) => a*b*c
+  console.log(multiplicarcon3Numeros(2,3,4));
+
+
+  const incrementacion = (num, incremento = 1) => num + incremento;
+  console.log(incrementacion(10)); // 11 (por defecto)
+  console.log(incrementacion(10, 5));
